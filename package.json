@@ -1,22 +1,17 @@
 {
-  "name": "ngmeta",
-  "version": "13.0.0",
+  "name": "angular-mata-tags",
+  "version": "1.0.0",
   "description": "A tool for updating meta tags in an Angular application.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf ./dist && ngc",
-    "docs": "typedoc --out docs/ --exclude **/*.spec.ts src/",
     "lint": "gts lint",
-    "prepare": "npm run build",
-    "release:major": "changelog -M && git add . && git commit -m 'chore(release): major version release' && npm version major && git push origin && git push origin --tags",
-    "release:minor": "changelog -m && git add . && git commit -m 'chore(release): minor version release' && npm version minor && git push origin && git push origin --tags",
-    "release:patch": "changelog -p && git add . && git commit -m 'chore(release): patch version release' && npm version patch && git push origin && git push origin --tags",
     "test": "echo \"no tests yet\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichaelSolati/ngmeta.git"
+    "url": "git+https://github.com/Malik-shahzadAli/angular-meta-tags.git"
   },
   "keywords": [
     "angular",
@@ -28,9 +23,9 @@
   "author": "Michael Solati <mkslt04@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MichaelSolati/ngmeta/issues"
+    "url": "https://github.com/Malik-shahzadAli/angular-meta-tags/issues"
   },
-  "homepage": "https://ngmeta.otta.dev",
+  "homepage": "",
   "files": [
     "dist/**",
     "CHANGELOG.md",
@@ -40,23 +35,22 @@
     "README.md"
   ],
   "peerDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/core": "^13.0.0",
-    "@angular/platform-browser": "^13.0.0",
+    "@angular/common": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
     "rxjs": "^7.4.0"
   },
   "devDependencies": {
-    "@angular/common": "^13.0.0",
-    "@angular/compiler": "^13.0.0",
-    "@angular/compiler-cli": "^13.0.0",
-    "@angular/core": "^13.0.0",
-    "@angular/platform-browser": "^13.0.0",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/compiler-cli": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
     "@types/node": "^14.11.2",
     "generate-changelog": "~1.8.0",
     "rimraf": "^3.0.2",
-    "rxjs": "^7.4.0",
-    "typedoc": "~0.22.14",
-    "typescript": "~4.4.2",
+    "rxjs": "^7.8.0",
+    "typescript": "~5.1.3",
     "gts": "^3.1.0"
   }
 }
